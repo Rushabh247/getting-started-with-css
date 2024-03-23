@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        form {
+            width: 300px;
+            margin: 50px auto;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: color 0.3s ease; /* Transition for text color */
+        }
+        input[type="text"]:hover, input[type="email"]:hover, input[type="password"]:hover {
+            color: blue; /* Change text color on hover */
+        }
+    </style>
+</head>
+<body>
+
+<form action="#">
+    <input type="text" name="username" placeholder="Username"><br>
+    <input type="email" name="email" placeholder="Email"><br>
+    <input type="password" name="password" placeholder="Password"><br>
+    <input type="submit" value="Register">
+</form>
+
+</body>
+</html>

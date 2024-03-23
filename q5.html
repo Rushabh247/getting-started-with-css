@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover to Reveal Image</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 300px;
+            margin: 100px auto;
+            text-align: center;
+        }
+        .image-container {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+        }
+        .image-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: opacity 0.3s ease;
+        }
+        .image-container:hover img {
+            opacity: 1; /* Show image on hover */
+        }
+    </style>
+</head>
+<body>
+<h1>Hover below to reveal a suprise</h1>
+<div class="container">
+    <div class="image-container">
+        <img src="./images1.jpg" alt="Hover to Reveal Image" style="opacity: 0;">
+    </div>
+  
+</div>
+
+</body>
+</html>
